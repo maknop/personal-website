@@ -1,12 +1,12 @@
-# Welcome to my page
-## Run Application Locally
-### Install dependencies
+# Welcome to my page :wave:
+### Run React App from Docker Container
+Build Docker container.
 ```
-npm install
+docker build -t personal-site:latest .
 ```
 
-### Run server locally
+Run detached Docker container with port 8000 exposed.
 ```
-npm start
+docker run -d -p 8000:8000 personal-site:latest
 ```
 
