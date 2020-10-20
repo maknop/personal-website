@@ -1,5 +1,5 @@
 # Welcome to my page :wave:
-## Run React App from Docker Container
+### Run React App from Docker Container
 Build Docker container.
 ```
 docker build -t personal-site:latest .
