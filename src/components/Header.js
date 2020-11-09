@@ -4,13 +4,14 @@ import {Link} from 'react-router-dom';
 /* Import CSS */
 import '../css/Header.css';
 
+import Logo from '../img/profile_picture.jpg'
+
 export default function Header() {
     return (
-        <nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/projects">Projects</Link></li>
-            </ul>
-        </nav>
+        <div class="nav-header">
+            <Link to="/projects" class="header-buttons">Projects</Link>
+            <Link to="/About" class="header-buttons">About</Link>
+            <Link to="/" class="header-buttons">Home</Link>
+        </div>
     )
 }
