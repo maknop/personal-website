@@ -7,7 +7,7 @@ import Header from './Header';
 import '../css/Home.css';
 
 /* Import img */
-import profilePicture from '../img/profile_picture.jpg';
+import profilePicture from '../img/profile_picture.png';
 
 function Home() {
     return (

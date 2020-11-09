@@ -4,8 +4,6 @@ import {Link} from 'react-router-dom';
 /* Import CSS */
 import '../css/Header.css';
 
-import Logo from '../img/profile_picture.jpg'
-
 export default function Header() {
     return (
         <div class="nav-header">
