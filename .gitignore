@@ -1,4 +1,9 @@
+# Node
 node_modules
+
+# MacOS
 .DS_Store
 
+# Other
 *.swp
+.cache
