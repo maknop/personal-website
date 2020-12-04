@@ -1,15 +1,21 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react'
+import { Link } from "gatsby";
+import Footer from './Footer'
+import avatar from '../assets/images/avatar.jpg'
 
-/* Import CSS */
-import '../css/Header.css';
-
-export default function Header() {
-    return (
-        <div class="nav-header">
-            <Link to="/projects" class="header-buttons">Projects</Link>
-            <Link to="/About" class="header-buttons">About</Link>
-            <Link to="/" class="header-buttons">Home</Link>
-        </div>
-    )
+class Header extends React.Component {
+    render() {
+        return (
+            <header id="header">
+                <div className="inner">
+                    <Link to="/" className="image avatar"><img src={avatar} alt="" /></Link>
+                    <h1>A super simple responsite site<br />template <strong>powered by <a href="https://conradlin.com/blog/posts/host-gatsbyjs-blog-with-notion-cms-and-netlify-for-free/" target="_blank">Notion</a></strong>,<br /> 
+                    crafted by <a href="https://conradlin.com" target="_blank">Conrad Lin</a>.</h1>
+                </div>
+                <Footer />
+            </header>
+        )
+    }
 }
+
+export default Header
