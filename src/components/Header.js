@@ -3,18 +3,15 @@ import React from 'react'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
-    <div className="logo">
-      <span className="icon fa-diamond"></span>
-    </div>
+    
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Hello, my name is Matthew Knop</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+            I'm a software engineering graduate from the University of Northern<br />
+            Colorado with a passion for DevOps and backend development.<br />
+            Right now I am looking for a full-time software engineering role. Please<br />
+            feel free to contact me if you believe I am a good fit.
         </p>
       </div>
     </div>
