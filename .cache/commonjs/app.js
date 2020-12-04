@@ -22,19 +22,18 @@ var _loader = require("./loader");
 
 var _devLoader = _interopRequireDefault(require("./dev-loader"));
 
+var _syncRequires = _interopRequireDefault(require("$virtual/sync-requires"));
+
 var _matchPaths = _interopRequireDefault(require("$virtual/match-paths.json"));
 
 // Generated during bootstrap
-window.___emitter = _emitter.default;
-let pageComponentRequires;
-
-if (process.env.GATSBY_EXPERIMENTAL_LAZY_DEVJS) {
-  pageComponentRequires = require(`$virtual/lazy-client-sync-requires`);
-} else {
-  pageComponentRequires = require(`$virtual/sync-requires`);
+if (process.env.GATSBY_HOT_LOADER === `fast-refresh` && module.hot) {
+  module.hot.accept(`$virtual/sync-requires`, () => {// Manually reload
+  });
 }
 
-const loader = new _devLoader.default(pageComponentRequires, _matchPaths.default);
+window.___emitter = _emitter.default;
+const loader = new _devLoader.default(_syncRequires.default, _matchPaths.default);
 (0, _loader.setLoader)(loader);
 loader.setApiRunner(_apiRunnerBrowser.apiRunner);
 window.___loader = _loader.publicLoader; // Do dummy dynamic import so the jsonp __webpack_require__.e is added to the commons.js

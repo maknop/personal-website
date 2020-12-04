@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Strata by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Strata by HTML5 UP"
+    title: 'Gatsby Starter - Dimension V2',
+    author: 'Hunter Chang',
+    description: 'A Gatsby.js V2 Starter based on Dimension by HTML5 UP',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -15,22 +15,9 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `@conradlin/gatsby-source-notion-database`,
-      options: {
-        sourceConfig: [
-          {
-            name: 'posts',
-            table: 'https://www.notion.so/conradlin/1aa283fcd5ae4a73ba0f73c062de745e?v=6a40014bee144152b55203e2caf0c02e',
-            cacheType: 'html'
-          }
-        ]
-      }
-    },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
   ],
 }
