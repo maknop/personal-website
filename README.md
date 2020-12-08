@@ -23,5 +23,5 @@ Run `gatsby develop` in the terminal to start the dev site.
 ## Build and Run Gatsby project in Docker container:
 ```
 docker build -t personal-website:latest .
-docker run -d -p 8000:8000 personal-website:latest
+docker run -d -p 127.0.0.1:8000/tcp personal-website:latest
 ```
