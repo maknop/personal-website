@@ -50,79 +50,6 @@ class Main extends React.Component {
             placerat maximus. Pellentesque aliquam maximus risus, vel sed
             vehicula.
           </p>
-          {close}
-        </article>
-
-        <article
-          id="resume"
-          className={`${this.props.article === 'resume' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Resume</h2>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
-          {close}
-        </article>
-
-        <article
-          id="blog"
-          className={`${this.props.article === 'blog' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Blog</h2>
-          <p>
-            I am planning on writing blog posts. Stay tuned!
-          </p>
-          {close}
-        </article>
-
-        <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
           <ul className="icons">
             <li>
               <a
@@ -151,6 +78,95 @@ class Main extends React.Component {
               </a>
             </li>
           </ul>
+          {close}
+        </article>
+
+        <article
+          id="resume"
+          className={`${this.props.article === 'resume' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+            <h2 className="major">Resume</h2>
+            <p name="experience"> 
+                <h3>Relevant Work Experience</h3>
+                <b>Emerging Technology Intern</b> | Charter Communications | May 2020 - July 2020
+                <ul>
+                    <li>Designed a REST API and incorporated unit/integration testing.</li>
+                    <li>Deployed three application components in multiple Docker containers.</li>
+                    <li>Utilized Docker-compose for container orchestration.</li>
+                    <li>Configured NGINX for load balancing and HTTP request routing.</li>
+                    <li>Developed understanding of the software development process utilizing CI/CD tools.</li>
+                    <li>Employed version control using Git for maintaining code.</li>
+                </ul>
+            </p>
+            <break />
+            <p name="skills">
+                <h3>Skills</h3>
+                Python, JavaScript, HTML, CSS, Java, C#, C++, React, Django, Docker Nginx, Ubuntu, DigitalOcean, PostgreSQL, SQLite
+            </p>
+            <p name="education">
+                <h3>Education</h3>
+                <b>B.S. in Software Engineering</b> | University of Northern Colorado | December 2020
+                Relevant Coursework
+                <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Object-Oriented Analysis, Design, & Programming</li>
+                    <li>Networking & Data Communication Systems</li>
+                    <li>Database Management Systems</li>
+                    <li>Operating Systems</li>
+                    <li>Graphical Interface Programming</li> 
+                    <li>System Analysis and Design</li>   
+                    <li>Structured Programming</li>
+                    <li>Software Engineering I</li>
+                    <li>Discrete Mathematics</li>
+                </ul>    
+                <b>B.S. in General Studies</b> | University of Arizona | December 2017<br />
+                Relevant Coursework
+                <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Object-Oriented Analysis, Design, & Programming</li>
+                    <li>Networking & Data Communication Systems</li>
+                    <li>Database Management Systems</li>
+                    <li>Operating Systems</li>
+                    <li>Graphical Interface Programming</li> 
+                    <li>System Analysis and Design</li>   
+                    <li>Structured Programming</li>
+                    <li>Software Engineering I</li>
+                    <li>Discrete Mathematics</li>
+                </ul>  
+            
+            </p>
+            <p name="projects">
+
+            </p>
+            {close}
+        </article>
+
+        <article
+          id="projects"
+          className={`${this.props.article === 'projects' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Projects</h2>
+          <p>Adding projects soon!</p>
+          {close}
+        </article>
+        
+        <article
+          id="blog"
+          className={`${this.props.article === 'blog' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Blog</h2>
+          <p>
+            I am planning on writing blog posts. Stay tuned!
+          </p>
           {close}
         </article>
       </div>
