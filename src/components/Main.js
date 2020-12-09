@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
+import me from '../images/me.jpg'
+import cat from '../images/cat.jpg'
 
 class Main extends React.Component {
   render() {
@@ -28,56 +29,35 @@ class Main extends React.Component {
         >
           <h2 className="major">Intro</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={me} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            <h3>About Me</h3>
+            I have been an Arizona native for most of my life until moving to Colorado in 2018. <br />
+            Aside from my passion for coding, I also enjoy hiking, gaming, and enjoy drinking an <br />
+            unhealthy amount of coffee. I have an adorable cat named Leo who I have had since 2017. <br />
+          </p>
+          <span className="image main">
+            <img src={cat} alt="" />
+          </span>
+          <p>
+            <h3>Educational Achievements</h3>
+            I received my first degree from The University of Arizona where I acquired a Bachelors <br /> 
+            of Science in General Studies. During this time I took a small handful of coding classes <br />
+            which then prompted me to want to pursue a second degree in Software Engineering. <br />
+            During the Summer of 2020, I was fortunate enough to gain real world experience as a <br />
+            Software Development Intern for Charter Communications.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            <h3>Future Goals</h3>
+            <ul>
+                <li>Write weekly blog posts related to computer science topics.</li>
+                <li>Pursue a Masters in Computer Science or related specialty.</li>
+                <li>Teach computer science as an adjunct professor.</li>
+                <li>Organize a Meetup that can be served as a resource for students starting their careers.</li>
+            </ul>
           </p>
-          <ul className="icons">
-            <li>
-              <a
-                href="https://twitter.com/misterknop"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/MrKnop/" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/matthewaknop/" className="icon fa-linkedin">
-                <span className="label">LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/maknop"
-                className="icon fa-github"
-              >
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-          </ul>
+          
           {close}
         </article>
 
@@ -155,7 +135,7 @@ class Main extends React.Component {
           <p>Adding projects soon!</p>
           {close}
         </article>
-        
+
         <article
           id="blog"
           className={`${this.props.article === 'blog' ? 'active' : ''} ${

@@ -13,6 +13,34 @@ const Header = props => (
             Right now I am looking for a full-time software engineering role. Please<br />
             feel free to contact me if you believe I am a good fit.
         </p>
+        <ul className="icons">
+            <li>
+              <a
+                href="https://twitter.com/misterknop"
+                className="icon fa-twitter"
+              >
+                <span className="label">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/mrknop/" className="icon fa-instagram">
+                <span className="label">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/matthewaknop/" className="icon fa-linkedin">
+                <span className="label">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/maknop"
+                className="icon fa-github"
+              >
+                <span className="label">GitHub</span>
+              </a>
+            </li>
+          </ul>
       </div>
     </div>
     <nav>
