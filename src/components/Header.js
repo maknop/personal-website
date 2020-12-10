@@ -8,10 +8,10 @@ const Header = props => (
       <div className="inner">
         <h1>Hello, my name is Matthew Knop</h1>
         <p>
-            I'm a software engineering graduate from the University of Northern<br />
-            Colorado with a passion for DevOps and backend development.<br />
-            Right now I am looking for a full-time software engineering role. Please<br />
-            feel free to contact me if you believe I am a good fit.
+            I'm a software engineering graduate from the University of Northern 
+            Colorado with a passion for DevOps and backend development. 
+            Right now I am looking for a full-time software engineering role. Please 
+            feel free to contact me if you believe I am a good fit. 
         </p>
         <ul className="icons">
             <li>
