@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import me from '../images/me.jpg'
 import cat from '../images/cat.jpg'
+import leo from '../images/leo.jpg'
 
 class Main extends React.Component {
   render() {

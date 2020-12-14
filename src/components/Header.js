@@ -11,7 +11,8 @@ const Header = props => (
             I'm a software engineering graduate from the University of Northern 
             Colorado with a passion for DevOps and backend development. 
             Right now I am looking for a full-time software engineering role. Please 
-            feel free to contact me if you believe I am a good fit. 
+            feel free to <a href="mailto: matthewaknop@gmail.com">contact me</a> by 
+            email if you believe I am a good fit. 
         </p>
         <ul className="icons">
             <li>
